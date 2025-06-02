@@ -1,0 +1,13 @@
+pattern.txt
+```pattern
+{GOBUSTER}/v1
+{GOBUSTER}/v2
+api/v1/{GOBUSTER}
+api/v2/{GOBUSTER}
+```
+API bruteforce gobuster command:
+```
+gobuster dir -u http://$trgt1:5002 -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt -p pattern.txt
+```
+Julio — 08/02/2024 01:20
+The way I found the running services was after running Gobuster and finding /api, I created a custom pattern for Gobuster with {GOBUSTER}/v1 and {GOBUSTER/v2 and used the -p flag.  I re-ran Gobuster and found /aero/api/heartbeat which listed the running services.

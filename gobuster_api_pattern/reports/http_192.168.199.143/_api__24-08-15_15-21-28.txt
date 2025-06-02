@@ -1,0 +1,3 @@
+# Dirsearch started Thu Aug 15 15:21:31 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.199.143/api/
+
+404     4KB  http://192.168.199.143/api/%2e%2e//google.com

